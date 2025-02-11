@@ -1,0 +1,52 @@
+site_name: RavenDocs
+site_url: https://ppeuchin.github.io/
+
+theme:
+  name: material
+  features:
+    - search.suggest
+    - search.highlight
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
+      pygments_lang_class: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+
+plugins:
+  - blog
+  - search
+  - tags
+
+nav:
+  # - Home: index.md
+  # - About: about.md
+  - VyOS:
+      - Configuring the interface: vyos-tutorials/configuring-the-interface.md
+  # - Juniper:
+  #     - Initial Configuration: juniper/initial-configuration.md
+  - "Prometheus & Grafana":
+      - Installing Prometheus & Grafana with Docker: prometheus/installing-prometheus-and-grafana.md
+      - Configuring Cisco switches for prometheus: prometheus/configuring-cisco-switches.md
+      - Adding prometheus to grafana: prometheus/adding-prometheus-to-grafana.md
+  - Homelab:
+      - Introduction: homelab/index.md
+      - Deploying watchtower: homelab/deploying-watchtower.md
