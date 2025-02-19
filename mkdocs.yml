@@ -42,12 +42,12 @@ nav:
   - Homelab:
       - Introduction: homelab/index.md
       - Deploying watchtower: homelab/deploying-watchtower.md
-  - VyOS:
-      - Configuring the interface: vyos-tutorials/configuring-the-interface.md
+  # - VyOS:
+  #     - Configuring the interface: vyos-tutorials/configuring-the-interface.md
   # - Juniper:
   #     - Initial Configuration: juniper/initial-configuration.md
-  - "Prometheus & Grafana":
-      - Installing Prometheus & Grafana with Docker: prometheus/installing-prometheus-and-grafana.md
-      - Configuring Cisco switches for prometheus: prometheus/configuring-cisco-switches.md
-      - Adding prometheus to grafana: prometheus/adding-prometheus-to-grafana.md
+  # - "Prometheus & Grafana":
+  #     - Installing Prometheus & Grafana with Docker: prometheus/installing-prometheus-and-grafana.md
+  #     - Configuring Cisco switches for prometheus: prometheus/configuring-cisco-switches.md
+  #     - Adding prometheus to grafana: prometheus/adding-prometheus-to-grafana.md
   
