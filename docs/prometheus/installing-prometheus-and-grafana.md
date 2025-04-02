@@ -17,5 +17,17 @@ docker network create monitoring
 services:
   prometheus:
      image: prom/prometheus
+     volumes:
+       - /opt/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+     networks:
+       - monitoring
 
+   grafana:
+     image: grafana/grafana
+     networks:
+       - monitoring
+
+   networks:
+     monitoring:
+       external: true
 ```
