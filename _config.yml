@@ -34,14 +34,15 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: deandra
+  name: dndr
   email: deandra@dndr.space # change to your email address
   links:
     # The first element serves as the copyright owner's link
+    - https://github.com/ppeuchin
     - https://www.linkedin.com/in/lisel
     - https://www.instagram.com/@haarbytes
     - https://twitter.com/cybxlr # change to your twitter homepage
-    - https://github.com/cybxlr # change to your github homepage
+     # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     
