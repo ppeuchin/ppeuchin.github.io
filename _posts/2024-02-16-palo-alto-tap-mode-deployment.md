@@ -11,13 +11,13 @@ Tap mode deployment allows you to passively monitor traffic flows across a netwo
 
 By deploying the firewall in tap mode, you can get visibility into what applications are running on your network without having to make any changes to your network design. In addition, when in tap mode, the firewall can identify threats on your network, but because the traffic is not running through the firewall while it is in tap mode, it cannot take any action on the traffic, such as blocking traffic with threats or applying QoS traffic control.
 
-## DEMO
+## Demo
 
 This demo includes the use of a cisco switch as the SPAN configured switch and the Palo Alto firewall in tap mode.
 
 ![demo-image](/assets/img/palo-alto-tap-mode-deployment/demo-image.png)
 
-**Configuring SPAN switch**
+### Configuring SPAN switch
 
 We’ll create a SPAN session and specify the source and destination ports.
 
@@ -32,7 +32,7 @@ Switch(config)# monitor session 1 destination interface g0/2
 
 `both` here means that we want to monitor traffic that are being transmitted and received on the specified ports.
 
-**Configuring Tap mode**
+### Configuring Tap mode
 
 First, we create a tap zone
 
@@ -52,18 +52,16 @@ And create a security policy named TAP. It can be anything you want.
 
 The source and destination zones should be the tap zone we created earlier.
 
-source
 ![polzones](/assets/img/palo-alto-tap-mode-deployment/polzones.png)
-destination
 ![polzones](/assets/img/palo-alto-tap-mode-deployment/polzone.png)
 
 We set the profile setting to group and select the group profile we created earlier. And check log at session start as well.
 
-<!-- ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/abd53d78-87bb-49c3-9c68-28243d839058/f1728806-287c-470e-b735-51f6946d128e/Untitled.png) -->
+![polrule](/assets/img/palo-alto-tap-mode-deployment/polrule.png)
 
 Now, we’re all set. Commit the changes, go to the monitor tab then session browser and refresh. You should see the traffic being sent to/from the devices connected to the monitored ports.
 
-**Helpful Resources**
+## Helpful Resources
 
 Palo Alto Docs: [Tap Interfaces (paloaltonetworks.com)](https://docs.paloaltonetworks.com/pan-os/10-1/pan-os-networking-admin/configure-interfaces/tap-interfaces)
 
