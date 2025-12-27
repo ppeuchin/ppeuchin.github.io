@@ -1,9 +1,9 @@
 ---
 title: Palo Alto Tap Mode Deployment
+description: Deploying Palo Alto Firewall in tap mode with a Cisco switch configured as the SPAN switch.
 date: 2024-02-16 00:00:00 +0000
 categories: [firewalls]
 tags: [networking, palo alto, security]
-description: Deploying Palo Alto Firewall in tap mode with a Cisco switch configured as the SPAN switch
 toc: true
 ---
 
@@ -53,7 +53,10 @@ And create a security policy named TAP. It can be anything you want.
 The source and destination zones should be the tap zone we created earlier.
 
 ![polzones](/assets/img/palo-alto-tap-mode-deployment/polzones.png)
+_Source Zone_
+
 ![polzones](/assets/img/palo-alto-tap-mode-deployment/polzone.png)
+_Destination Zone_
 
 We set the profile setting to group and select the group profile we created earlier. And check log at session start as well.
 
