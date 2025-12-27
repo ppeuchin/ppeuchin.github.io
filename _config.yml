@@ -94,9 +94,9 @@ comments:
   # Giscus options › https://giscus.app
   giscus:
     repo: ppeuchin/ppeuchin.github.io
-    repo_id:
-    category:
-    category_id:
+    repo_id: R_kgDOKqJQaw
+    category: General
+    category_id: DIC_kwDOKqJQa84C0RYR
     mapping: # optional, default to 'pathname'
     input_position: # optional, default to 'bottom'
     lang: # optional, default to the value of `site.lang`
