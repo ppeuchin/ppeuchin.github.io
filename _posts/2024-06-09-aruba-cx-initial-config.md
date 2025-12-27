@@ -53,11 +53,11 @@ ArubaCX(config-if)# no shutdown
 {: .prompt-info}
 
 ```bash
-*# from interface context to global context*
+# from interface context to global context
 ArubaCX(config-if)# exit
 ArubaCX(config)# 
 
-*# from interface context to manager context*
+# from interface context to manager context
 ArubaCX(config-if)# end
 ArubaCX#
 ```
